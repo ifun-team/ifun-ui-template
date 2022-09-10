@@ -3,6 +3,9 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 // component
 import Components from "./components/index.js";
+// ifun-ui
+import IFunUI from "ifun-ui";
+import "ifun-ui/dist/style.css";
 // vue-i18n
 import { createI18n } from "vue-i18n";
 // locale
@@ -56,5 +59,7 @@ app.use(pinia);
 app.use(Components);
 // 国际化
 app.use(i18n);
+// UI组件
+app.use(IFunUI);
 
 app.mount("#app");
